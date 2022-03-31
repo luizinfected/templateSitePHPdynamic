@@ -78,11 +78,11 @@ header {
   /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
   border-radius: 10px;
   background-color: #fcfcfc;
+  transition: 0.6s ease-out;
 }
 .box:hover {
-  transition: all 0.6s ease;
+  transition: 0.6s ease-out 100ms;
   transform: translateX(10px) translateY(-10px) scale(1.01);
-  box-shadow: rgba(204, 18, 28, 0.2) 0px 20px 30px -10px;
   box-shadow: #bb113e9c -5px 5px, #bb113e67 -10px 10px, #bb113e44 -15px 15px,
     #bb113e18 -20px 20px, rgba(241, 7, 7, 0.05) -25px 25px;
   background-color: #bb113f;
@@ -104,9 +104,10 @@ header {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   background-color: #fcfcfc;
+  transition: 0.6s ease;
 }
 .box-slide:hover {
-  transition: all 0.6s ease;
+  transition: 0.6s ease;
   transform: translateX(10px) translateY(-10px) scale(1.05);
   box-shadow: rgba(204, 18, 28, 0.2) 0px 20px 30px -10px;
   background-color: #bb113f;

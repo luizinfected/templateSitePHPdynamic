@@ -20,7 +20,7 @@
             <div class="col-9">
                 <ul class="header-links h-100">
                     <li>Home</li>
-                    <li>Empresa</li>
+                    <li><a href="empresa.php">Empresa</a></li>
                     <li>Serviços</li>
                     <li>Videos</li>
                     <li>Contato</li>
