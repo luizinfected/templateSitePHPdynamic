@@ -9,6 +9,9 @@ body {
   font-weight: bold;
   font-size: 1em;
 }
+body p{
+  padding: .5em;
+}
 header {
   padding: 5px;
   width: 100%;
@@ -20,6 +23,11 @@ header {
   max-width: 1000px;
   height: auto;
   margin: 0 auto;
+}
+
+/* inicio header =============================================== */
+.responsive-menu{
+  display: none;
 }
 .header-top {
   color: var(--primary-color);
@@ -54,13 +62,20 @@ header {
   justify-content: space-around;
 }
 .header-links li {
-  margin: 1.5em;
+  margin: 1em;
   font-size: 0.9em;
 }
 .header-links li:hover {
   border-bottom: 2px solid var(--primary-color);
   transition: all 2s ease;
 }
+.header-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* fim header =============================================== */
 .carrousel {
   height: 600px;
   width: 100%;
@@ -70,9 +85,10 @@ header {
   height: 600px;
   overflow: hidden;
 }
+
 .box {
-  height: 400px;
-  width: 45%;
+  /* height: 400px; */
+  width: 400px;
   margin: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
@@ -97,9 +113,14 @@ header {
   border: 2px solid #fcfcfc;
   border-radius: 10px;
 }
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .box-slide {
   height: 250px;
-  width: 23%;
+  width: 200px;
   margin: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -113,8 +134,9 @@ header {
   background-color: #bb113f;
   color: #fff;
 }
+
+/*  footer ===============================================*/
 footer {
-  height: 200px;
   background-color: var(--bg-color);
   color: var(--primary-color);
   padding: 1.5em;
@@ -128,3 +150,83 @@ footer {
   color: var(--primary-color);
   display: block;
 }
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.footer-links li {
+  margin: 1em;
+  font-size: 0.9em;
+  
+}
+.footer-links li:hover {
+  border-bottom: 2px solid var(--primary-color);
+  transition: all 2s ease;
+}
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transform: rotate(90deg)
+}
+
+/* footer fim ===============================================*/
+
+/* cards principais, não mexer */
+@media (max-width: 880px)
+{
+  .boxes{
+    justify-content: center;
+  }
+}
+/* cards principais responsivo fim */
+
+
+/* media padrao */
+@media (max-width: 600px)
+{
+  .header-links{
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-links{
+    display: none;
+  }
+  .header-links li{
+    background-color: #000;
+    padding: .5em;
+    margin: .2em;
+  }
+  .footer-links{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-links li{
+    background-color: #000;
+    padding: .5em;
+    margin: .2em;
+  }
+   
+  .responsive-menu{
+    display: block;
+  }
+
+  .brand{
+    text-align: center;
+  }
+  .top-links{
+    display: none;
+  }
+  .header-top{
+    display: flex;
+    justify-content: space-around;
+  }
+  .boxes{
+    justify-content: center;
+  }
+  
+
+}
+
+/* footer fim */

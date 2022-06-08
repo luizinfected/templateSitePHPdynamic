@@ -16,8 +16,8 @@
     <div class="wrapper">
         <h1 class="display-2 text-center pt-5"><?=$nomeSite ?></h1>
 
-        <div class="row">
-            <div class="box">
+        <div class="boxes">
+            <div class="box p-2">
                 <h1 class="text-center mt-2">Lore Ipsum</h1>
                 <p class="text-center mt-5 lead"></p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
                 atque eius esse quas, sunt nisi
@@ -52,8 +52,8 @@
         </p>
         <hr>
 
-        <div class="row mt-5 mb-5">
-            <h1 class="text-center display-5">Exemplos</h1>
+        <h1 class="text-center display-5">Exemplos</h1>
+        <div class="boxes mt-5 mb-5">
             <div class="box-slide"></div>
             <div class="box-slide"></div>
             <div class="box-slide"></div>
